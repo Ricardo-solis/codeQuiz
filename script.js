@@ -6,3 +6,6 @@ const text = document.getElementById("startText");
 const time = document.getElementById("time-left");
 
 const startBtn = document.getElementById("startButton");
+
+// questions in an array
+let questions = [];
