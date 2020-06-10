@@ -8,4 +8,61 @@ const time = document.getElementById("time-left");
 const startBtn = document.getElementById("startButton");
 
 // questions in an array
-let questions = [];
+let questions = [
+    // Question 1
+    {
+        question: "Commonly used data-type DO NOT include:",
+        answers: {
+          1: "Strings",
+          2: "Booleans",
+          3: "Alerts"
+          4: "Numbers"
+        },
+        correctAnswer: "3"
+      },
+      //Question 2
+      {
+        question: "The Condition in an if/else statement is enclosed within _____.",
+        answers: {
+          1: "Quotes",
+          2: "Curly Brackets",
+          3: "Parenthesis"
+          4: "Square Brackets"
+        },
+        correctAnswer: "3"
+      },
+      //Question 3
+      {
+        question: "Arrays in JavaScript can be used to store ____.",
+        answers: {
+          1: "Numbers and Strings",
+          2: "Other Arrays",
+          3: "Booleans"
+          4: "All Of The Above"
+        },
+        correctAnswer: "4"
+      },
+      //Question 4
+      {
+        question: "String values must be enclosed within ____ when being assigned to variables.",
+        answers: {
+          1: "Commas",
+          2: "Curly Brackets",
+          3: "Quotes"
+          4: "Parenthesis"
+        },
+        correctAnswer: "3"
+      },
+      //Question 5
+      {
+        question: "A very useful tool used for developing and debugging for printing content to the debugger is:",
+        answers: {
+          1: "Javascript",
+          2: "Terminal/Bash",
+          3: "For Loops"
+          4: "Console.log"
+        },
+        correctAnswer: "4"
+      },
+      
+]; //End of Questions Array
