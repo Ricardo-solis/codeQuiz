@@ -7,6 +7,8 @@ const time = document.getElementById("timer");
 
 const startBtn = document.getElementById("startButton");
 
+const mainPage = document.getElementById("mainPage");
+
 // questions in an array
 let questions = [
   // Question 1
