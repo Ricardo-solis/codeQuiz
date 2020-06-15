@@ -74,4 +74,11 @@ let questions = [
 function startQuiz() {
   //hides mainpage after starting the quiz
   mainPage.style.display = "none";
+
+  // timer creation
+  let timeLeft = 75;
+
+  let timerCountDown = setInterval(function () {
+    timeLeft--;
+  });
 }
