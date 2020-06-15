@@ -69,3 +69,9 @@ let questions = [
     correctAnswer: "4",
   },
 ]; //End of Questions Arr
+
+//function to start the quiz
+function startQuiz() {
+  //hides mainpage after starting the quiz
+  mainPage.style.display = "none";
+}
