@@ -80,5 +80,10 @@ function startQuiz() {
 
   let timerCountDown = setInterval(function () {
     timeLeft--;
-  });
+    time.textContent = "Time Left: " + timeLeft;
+  }, 1000);
 }
+
+startBtn.addEventListener("click", function () {
+  startQuiz();
+});
