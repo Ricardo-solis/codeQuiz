@@ -84,6 +84,9 @@ function startQuiz() {
   }, 1000);
 }
 
+//when start quiz is clicked the start quiz function initiates,
 startBtn.addEventListener("click", function () {
   startQuiz();
 });
+
+//show questions
