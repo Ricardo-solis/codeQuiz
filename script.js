@@ -9,6 +9,8 @@ const startBtn = document.getElementById("startButton");
 
 const mainPage = document.getElementById("mainPage");
 
+const quizPage = document.getElementById("quiz");
+
 // questions in an array
 let questions = [
   // Question 1
@@ -70,10 +72,15 @@ let questions = [
   },
 ]; //End of Questions Arr
 
+//Before quiz is started
+mainPage.style.display = "block";
+quizPage.style.display = "none";
+
 //function to start the quiz
 function startQuiz() {
   //hides mainpage after starting the quiz
   mainPage.style.display = "none";
+  quizPage.style.display = "block";
 
   // timer creation
   let timeLeft = 75;
