@@ -11,6 +11,8 @@ const mainPage = document.getElementById("mainPage");
 
 const quizPage = document.getElementById("quiz");
 
+const endScreen = document.getElementById("endScreen");
+
 // questions in an array
 let questions = [
   // Question 1
@@ -75,12 +77,14 @@ let questions = [
 //Before quiz is started
 mainPage.style.display = "block";
 quizPage.style.display = "none";
+endScreen.style.display = "none";
 
 //function to start the quiz
 function startQuiz() {
   //hides mainpage after starting the quiz
   mainPage.style.display = "none";
   quizPage.style.display = "block";
+  endScreen.style.display = "none";
 
   // timer creation
   let timeLeft = 75;
@@ -88,6 +92,9 @@ function startQuiz() {
   let timerCountDown = setInterval(function () {
     timeLeft--;
     time.textContent = "Time Left: " + timeLeft;
+    if (timeLeft === 0) {
+      clearInterval(timerCountDown);
+    }
   }, 1000);
 }
 

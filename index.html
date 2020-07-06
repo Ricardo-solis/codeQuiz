@@ -1,67 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Code Quiz</title>
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-    />
-    <link rel="stylesheet" type="text/css" href="style.css" />
-  </head>
-  <body>
-    <nav>
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6">
-            <!-- view highscore here -->
-            <a href="highscores.html">View Highscores</a>
-          </div>
-          <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6">
-            <!-- time counter here -->
-            <div id="timer"></div>
-          </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Code Quiz</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+  <nav>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6">
+          <!-- view highscore here -->
+          <a href="highscores.html">View Highscores</a>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6">
+          <!-- time counter here -->
+          <div id="timer"></div>
         </div>
       </div>
-    </nav>
+    </div>
+  </nav>
 
-    <!-- Main page  -->
-    <main id="mainPage">
-      <header>
-        <div class="container">
-          <div class="text-center">
-            <h1 id="startTextTitle">Coding Quiz Challenge</h1>
-          </div>
-        </div>
-      </header>
+  <!-- Main page  -->
+  <main id="mainPage">
+    <header>
       <div class="container">
         <div class="text-center">
-          <p id="startText">
-            Try to answer the following code-related questions within the time
-            limit. Keep in mind that incorrect answers penalize your score/time
-            by 10 seconds!"
-          </p>
-          <!-- Start Button -->
-          <button id="startButton" type="button" class="btn active">
-            Start Quiz
-          </button>
+          <h1 id="startTextTitle">Coding Quiz Challenge</h1>
         </div>
       </div>
-    </main>
-    <!-- End Main Page -->
-
-    <!-- Quiz Screen -->
-    <section id="quiz">
-      <div class="container">
-        <ul>
-          <li><button type="button" id="qOne"></button></li>
-          <li><button type="button" id="qTwo"></button></li>
-          <li><button type="button" id="qThree"></button></li>
-          <li><button type="button" id="qFour"></button></li>
-        </ul>
+    </header>
+    <div class="container">
+      <div class="text-center">
+        <p id="startText">
+          Try to answer the following code-related questions within the time
+          limit. Keep in mind that incorrect answers penalize your score/time
+          by 10 seconds!"
+        </p>
+        <!-- Start Button -->
+        <button id="startButton" type="button" class="btn active">
+          Start Quiz
+        </button>
       </div>
-    </section>
-    <script type="text/javascript" src="script.js"></script>
-  </body>
+    </div>
+  </main>
+  <!-- End Main Page -->
+
+  <!-- Quiz Screen -->
+  <section id="quiz">
+    <div class="container">
+      <ul>
+        <li><button type="button" id="qOne"></button></li>
+        <li><button type="button" id="qTwo"></button></li>
+        <li><button type="button" id="qThree"></button></li>
+        <li><button type="button" id="qFour"></button></li>
+      </ul>
+    </div>
+  </section>
+
+  <!--End Quiz Screen  -->
+  <section id="endScreen">
+    <p id="finalScore"></p>
+    <input type="text" placeholder="Your initials here.." id="initials">
+    <button id="sumbitInitials">Sumbit Score</button>
+
+  </section>
+
+  <script type="text/javascript" src="script.js"></script>
+</body>
+
 </html>
